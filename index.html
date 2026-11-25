@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativa sulla Privacy — Lucania 131</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #F3EBD8;
+      color: #231810;
+      max-width: 820px;
+      margin: 40px auto;
+      padding: 32px;
+      border: 2px solid #4A3525;
+      border-radius: 12px;
+      line-height: 1.7;
+      box-shadow: 0 8px 24px rgba(35, 24, 16, 0.15);
+    }
+    h1, h2 {
+      color: #7A1C1C;
+      border-bottom: 1px solid #B8860B;
+      padding-bottom: 6px;
+    }
+    .badge {
+      display: inline-block;
+      background-color: #7A1C1C;
+      color: #F3EBD8;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      margin-bottom: 16px;
+    }
+    code {
+      background-color: #E6D8BD;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <span class="badge">Offline-First &bull; Privacy-By-Design</span>
+  <h1>Informativa sulla Privacy — Lucania 131</h1>
+  <p><strong>Ultimo aggiornamento:</strong> Novembre 2026</p>
+  <p>La presente Informativa sulla Privacy descrive come l'applicazione mobile <strong>Lucania 131</strong> ("l'App") tratta le informazioni degli utenti. La tutela della tua privacy è per noi fondamentale: <strong>Lucania 131 è progettata con architettura offline-first</strong> e rispetta rigorosamente il principio di minimizzazione dei dati.</p>
+
+  <h2>1. Titolare del Trattamento</h2>
+  <p>Per qualsiasi domanda, richiesta di cancellazione o chiarimento relativo alla privacy dell'App, puoi contattare lo sviluppatore all'indirizzo email: <strong>[INSERISCI_LA_TUA_EMAIL@esempio.it]</strong></p>
+
+  <h2>2. Dati trattati e modalità di conservazione</h2>
+  <p>L'App funziona completamente anche senza connessione a Internet e non richiede registrazione con email, password o numero di telefono. I dati vengono gestiti su due livelli distinti:</p>
+  <ul>
+    <li><strong>Dati salvati esclusivamente sul tuo dispositivo (Locale):</strong>
+      <ul>
+        <li><em>Progressi, note e date:</em> I luoghi segnati come "conquistati", le date delle visite e gli appunti scritti nel Diario del Viandante sono salvati unicamente nel database locale (Room/SQLite) interno all'App.</li>
+        <li><em>Fotografie personali:</em> Le foto scattate tramite fotocamera o selezionate dalla galleria vengono copiate esclusivamente nella memoria privata dell'App (<code>filesDir</code>) sul telefono. Nessuna foto viene mai caricata su server esterni.</li>
+        <li><em>Backup manuale (.zip):</em> Puoi esportare volontariamente un archivio <code>.zip</code> dei tuoi ricordi e delle tue foto nella cartella o nel cloud personale da te scelto.</li>
+      </ul>
+    </li>
+    <li><strong>Classifica Globale dei Viandanti (Opzionale / Cloud):</strong>
+      <ul>
+        <li>Per consentire la partecipazione alla Classifica Globale, l'App utilizza <strong>Firebase Authentication (autenticazione anonima)</strong> e <strong>Google Cloud Firestore</strong>.</li>
+        <li>Vengono sincronizzati esclusivamente: un identificativo tecnico anonimo (UID), il <strong>Nickname</strong> scelto dall'utente, il conteggio dei luoghi conquistati, il numero di comuni esplorati, il grado araldico e la percentuale di completamento.</li>
+        <li><strong>Non vengono mai trasmessi</strong> al cloud fotografie, note personali, nomi reali o coordinate GPS dell'utente.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>3. Permessi del dispositivo richiesti</h2>
+  <p>L'App richiede i seguenti permessi esclusivamente al momento dell'utilizzo della relativa funzione:</p>
+  <ul>
+    <li><strong>Posizione precisa / approssimativa (GPS):</strong> Utilizzata <em>esclusivamente in tempo reale in locale sul dispositivo</em> per verificare che l'utente si trovi fisicamente entro un raggio di 2 km dal luogo storico o naturale prima di sbloccare il Sigillo di conquista. La posizione GPS non viene mai memorizzata né inviata a server esterni.</li>
+    <li><strong>Fotocamera:</strong> Utilizzata unicamente quando l'utente sceglie di scattare una fotografia da allegare alla figurina di un luogo visitato.</li>
+    <li><strong>Selettore Foto / Galleria:</strong> Utilizzato tramite il selettore sicuro di sistema Android (Photo Picker) per importare immagini già presenti sul dispositivo.</li>
+  </ul>
+
+  <h2>4. Servizi di terze parti e link esterni</h2>
+  <ul>
+    <li><strong>Navigazione GPS:</strong> Toccando il pulsante "Apri nel Navigatore GPS", l'App invia le coordinate geografiche pubbliche del monumento o sito all'app di mappe installata sul dispositivo (es. Google Maps).</li>
+    <li><strong>Firebase (Google LLC):</strong> Utilizzato esclusivamente per l'autenticazione anonima e la gestione della classifica pubblica dei punteggi.</li>
+    <li><strong>Pubblicità e Profilazione:</strong> L'App <strong>non contiene banner pubblicitari</strong> e non utilizza SDK di tracciamento commerciale o profilazione utente.</li>
+  </ul>
+
+  <h2>5. Cancellazione dei dati e diritti dell'utente</h2>
+  <p>Hai il pieno controllo sui tuoi dati in ogni momento:</p>
+  <ul>
+    <li>Puoi utilizzare la funzione <strong>"Ripristina impostazioni di fabbrica"</strong> all'interno dell'App per eliminare istantaneamente tutte le conquiste, le note, le fotografie locali e azzerare il tuo punteggio nella classifica online.</li>
+    <li>Puoi inoltre disinstallare l'App per rimuovere definitivamente tutti i dati memorizzati sul dispositivo, oppure scrivere all'indirizzo email indicato al punto 1 per richiedere la rimozione immediata del tuo record dalla classifica.</li>
+  </ul>
+</body>
+</html>
